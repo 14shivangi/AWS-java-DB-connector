@@ -119,8 +119,8 @@ For **Linux Instance**:-
 
 ## **Step 6: Test Connection**
 ---------------------------------
--Use the EC2 terminal to verify connectivity:-
--telnet <RDS-ENDPOINT> 3306
+1.Use the EC2 terminal to verify connectivity:-
+2. telnet <RDS-ENDPOINT> 3306
 ---------------------------------
 
 ## **Step 7: Configure MySQL Workbench (Local System)**
