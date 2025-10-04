@@ -55,8 +55,6 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 ---
 
 
-## 🧩 **Setup & Deployment Steps**
----------------------------------
 
 **Follow these steps to replicate the project:**
 ---
@@ -83,9 +81,9 @@ This guide explains how to deploy a Java (Spring Boot) application on **AWS EC2*
 ---------------------------------
 
 For **Linux Instance**:-
-sudo yum update -y
-sudo yum install java-17-openjdk -y
-sudo yum install git -y
+- sudo yum update -y
+- sudo yum install java-17-openjdk -y
+- sudo yum install git -y
 
 
 
