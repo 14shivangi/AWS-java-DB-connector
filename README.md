@@ -85,11 +85,10 @@ This guide explains how to deploy a Java (Spring Boot) application on **AWS EC2*
 
 ---
 
-##  Step 2: Install Required Packages on EC2
----------------------------------------
+##  **Step 2: Install Required Packages on EC2**
+---------------------------------
 
-For **Linux Instance**:
-```bash
+For **Linux Instance**:-
 sudo yum update -y
 sudo yum install java-17-openjdk -y
 sudo yum install git -y
@@ -97,7 +96,8 @@ sudo yum install git -y
 
 
 ## **Step 3: Clone or Upload Java Application**
-----------------------------------------
+---------------------------------
+
 - If using GitHub:-
 - git clone https://github.com/<your-repo-name>.git
 - cd <your-project-folder>
@@ -107,7 +107,8 @@ sudo yum install git -y
 
 
 ## **Step 4: Create an RDS MySQL Database**
----------------------------------------
+---------------------------------
+
 1. Go to AWS Console → RDS → Create Database.
 2. Select MySQL engine.
 3. Choose Free Tier or small instance (e.g., db.t3.micro).
@@ -119,18 +120,20 @@ sudo yum install git -y
 
 
 ## **Step 5: Connect EC2 to RDS**
-----------------------------------
+---------------------------------
+
 1. Edit EC2’s Security Group to allow outbound traffic to port 3306 (MySQL).
 2. Edit RDS’s Security Group to allow inbound traffic from EC2’s private IP or EC2 security group.
 
 ## **Step 6: Test Connection**
-------------------------------
+---------------------------------
 -Use the EC2 terminal to verify connectivity:-
 -telnet <RDS-ENDPOINT> 3306
--------------------------------
+---------------------------------
 
 ## **Step 7: Configure MySQL Workbench (Local System)**
------------------------------------------------
+---------------------------------
+
 1. Open MySQL Workbench → Click + to create a new connection.
 2. Set:
 #Hostname: RDS Endpoint
@@ -143,7 +146,7 @@ sudo yum install git -y
 #Monitor performance
 
 ## **Step 8: Access the Application**
---------------------------------
+---------------------------------
 Once the Java app is running:
 Open browser → http://<EC2-Public-IP>:8080
 Perform CRUD operations and verify results through MySQL Workbench.
@@ -153,6 +156,7 @@ Perform CRUD operations and verify results through MySQL Workbench.
 
 ## 💡 **Key Benefits of This Setup**
 ---------------------------------
+
 
 ### ✅ **Scalability**
 Both EC2 and RDS can be scaled independently as per traffic or data growth.  
@@ -172,6 +176,7 @@ Mirrors how enterprises deploy applications and databases separately for better 
 ## 🧠 **Learning Outcomes**
 ---------------------------------
 
+
 You will learn:
 
 - EC2 setup and SSH connectivity  
@@ -184,6 +189,7 @@ You will learn:
 
 ## 🧩 **Future Enhancements**
 ---------------------------------
+
 
 - Add **Elastic Load Balancer** and **Auto Scaling** for EC2  
 - Enable **RDS Multi-AZ** for high availability  
