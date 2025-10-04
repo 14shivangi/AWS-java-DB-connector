@@ -64,8 +64,7 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 ## 🧩 **Setup & Deployment Steps**
 ---------------------------------
 
-Follow these steps to replicate the project:
-
+**Follow these steps to replicate the project:**
 ---
 
 ### **Step 1: Launch an EC2 Instance**
