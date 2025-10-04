@@ -1,7 +1,7 @@
 
 📌 Java Application Deployment on AWS EC2 with RDS MySQL Integration:-
 =
-📌 -Project Objective:-
+Project Objective:-
 =
 
 The main objective of this project is to deploy a Java-based web application on an AWS EC2 instance and integrate it with an AWS RDS MySQL database.
@@ -9,7 +9,7 @@ This setup demonstrates a scalable, secure, and cloud-based architecture where t
 
 Additionally, MySQL Workbench is used locally by developers for remote database management and monitoring, replicating a real-world enterprise environment.
 =
-📌 Project Description:-
+Project Description:-
 =
 
 This project simulates a real-world enterprise cloud setup where:
@@ -28,7 +28,7 @@ Between MySQL Workbench ↔ RDS for remote management.
 
 This architecture promotes security, scalability, and ease of maintenance, following the same principles used in production-grade deployments.
 
-📌 Architecture Flow:-
+ Architecture Flow:-
 =
  Step-by-Step Flow:
 
@@ -47,7 +47,7 @@ Data Flow:
 MySQL Workbench ↔ RDS MySQL ↔ EC2 Java Application ↔ User
 
 =
-🏗️ Architecture Diagram
+Architecture Diagram
 =
 ⚙️ AWS Services Used
 Service	Purpose
@@ -178,7 +178,7 @@ Open browser → http://<EC2-Public-IP>:8080
 
 Perform CRUD operations and verify results through MySQL Workbench.
 =
-💡 Key Benefits of This Setup:-
+Key Benefits of This Setup:-
 =
 ✅ Scalability
 
@@ -200,7 +200,7 @@ Developers can manage databases directly from MySQL Workbench without AWS Consol
 
 Mirrors how enterprises deploy apps and databases separately for better performance and manageability.
 =
-🧠 Learning Outcomes
+Learning Outcomes
 
 You will learn:-
 
@@ -214,7 +214,7 @@ Security group and VPC network configuration
 
 Using MySQL Workbench for remote management
 =
-🧩 Future Enhancements
+Future Enhancements
 
 Add Elastic Load Balancer and Auto Scaling for EC2
 
@@ -226,7 +226,7 @@ Containerize the Java app using Docker and deploy with ECS or EKS
 
 Automate deployment with CI/CD pipelines (CodePipeline / GitHub Actions)
 =
-🏁 Conclusion
+ Conclusion
 
 This project provides a complete end-to-end deployment scenario of a Java application integrated with an AWS RDS MySQL database.
 It demonstrates real-world cloud concepts like scalability, security, managed services, and network isolation, essential for modern cloud and DevOps engineers.
