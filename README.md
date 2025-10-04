@@ -67,7 +67,7 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 **Follow these steps to replicate the project:**
 ---
 
-### **Step 1: Launch an EC2 Instance**
+## **Step 1: Launch an EC2 Instance**
 ---------------------------------
 
 1. Go to the **AWS Management Console → EC2 → Launch Instance**.  
@@ -85,7 +85,8 @@ This guide explains how to deploy a Java (Spring Boot) application on **AWS EC2*
 
 ---
 
-## 📌 Step 2: Install Required Packages on EC2
+##  Step 2: Install Required Packages on EC2
+---------------------------------------
 
 For **Linux Instance**:
 ```bash
@@ -95,7 +96,7 @@ sudo yum install git -y
 
 
 
-### **Step 3: Clone or Upload Java Application**
+## **Step 3: Clone or Upload Java Application**
 ----------------------------------------
 - If using GitHub:-
 - git clone https://github.com/<your-repo-name>.git
@@ -105,7 +106,7 @@ sudo yum install git -y
 -java -jar yourapp.jar
 
 
-### **Step 4: Create an RDS MySQL Database**
+## **Step 4: Create an RDS MySQL Database**
 ---------------------------------------
 1. Go to AWS Console → RDS → Create Database.
 2. Select MySQL engine.
@@ -117,18 +118,18 @@ sudo yum install git -y
 5. Wait until the instance is Available
 
 
-### **Step 5: Connect EC2 to RDS**
+## **Step 5: Connect EC2 to RDS**
 ----------------------------------
 1. Edit EC2’s Security Group to allow outbound traffic to port 3306 (MySQL).
 2. Edit RDS’s Security Group to allow inbound traffic from EC2’s private IP or EC2 security group.
 
-### **Step 6: Test Connection**
+## **Step 6: Test Connection**
 ------------------------------
 -Use the EC2 terminal to verify connectivity:-
 -telnet <RDS-ENDPOINT> 3306
 -------------------------------
 
-### **Step 7: Configure MySQL Workbench (Local System)**
+## **Step 7: Configure MySQL Workbench (Local System)**
 -----------------------------------------------
 1. Open MySQL Workbench → Click + to create a new connection.
 2. Set:
@@ -141,7 +142,7 @@ sudo yum install git -y
 #Run SQL queries
 #Monitor performance
 
-### **Step 8: Access the Application**
+## **Step 8: Access the Application**
 --------------------------------
 Once the Java app is running:
 Open browser → http://<EC2-Public-IP>:8080
