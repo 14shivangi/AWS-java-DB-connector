@@ -8,7 +8,7 @@ The main objective of this project is to deploy a Java-based web application on 
 This setup demonstrates a scalable, secure, and cloud-based architecture where the application performs CRUD (Create, Read, Update, Delete) operations on the RDS database.
 
 Additionally, MySQL Workbench is used locally by developers for remote database management and monitoring, replicating a real-world enterprise environment.
-'''
+=
 📌 Project Description:-
 =
 
@@ -227,10 +227,10 @@ Containerize the Java app using Docker and deploy with ECS or EKS
 Automate deployment with CI/CD pipelines (CodePipeline / GitHub Actions)
 =
 🏁 Conclusion
-=
+
 This project provides a complete end-to-end deployment scenario of a Java application integrated with an AWS RDS MySQL database.
 It demonstrates real-world cloud concepts like scalability, security, managed services, and network isolation, essential for modern cloud and DevOps engineers.
 
-=
+
 ✨ Developed by Shivangi Mishra
 =
