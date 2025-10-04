@@ -79,20 +79,20 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
    - Security Group → allow ports **22 (SSH)** and **8080 (for web app)**.  
 5. Launch the instance.
 
-**Connect to EC2:**
+# 🚀 Deploying Java Spring Boot App on AWS EC2 with RDS MySQL
 
-```
-ssh -i "your-key.pem" ec2-user@<EC2-Public-IP>
+This guide explains how to deploy a Java (Spring Boot) application on **AWS EC2** and connect it to an **RDS MySQL database**.
 
-### **Step 2: Install Required Packages on EC2**
-----------------------------------------
-- For Linux Instance:-
--sudo yum update -y
--sudo yum install java-17-openjdk -y
--sudo yum install git -y
+---
 
--Verify Java installation:-
--java -version
+## 📌 Step 2: Install Required Packages on EC2
+
+For **Linux Instance**:
+```bash
+sudo yum update -y
+sudo yum install java-17-openjdk -y
+sudo yum install git -y
+
 
 
 ### **Step 3: Clone or Upload Java Application**
