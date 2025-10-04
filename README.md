@@ -1,14 +1,14 @@
-# Integration-JavaCode-RDS-MySQLWorkbench-With-EC2Instance
-To deploy a Java application on an EC2 instance and integrate it with an AWS RDS MySQL database.
+
 🚀 Java Application Deployment on AWS EC2 with RDS MySQL Integration
-📌 Project Objective
+'''
+📌 -Project Objective
 
 The main objective of this project is to deploy a Java-based web application on an AWS EC2 instance and integrate it with an AWS RDS MySQL database.
 This setup demonstrates a scalable, secure, and cloud-based architecture where the application performs CRUD (Create, Read, Update, Delete) operations on the RDS database.
 
 Additionally, MySQL Workbench is used locally by developers for remote database management and monitoring, replicating a real-world enterprise environment.
-
-📌 Project Description
+'''
+📌- Project Description
 
 This project simulates a real-world enterprise cloud setup where:
 
@@ -25,7 +25,7 @@ Between EC2 ↔ RDS for application connectivity.
 Between MySQL Workbench ↔ RDS for remote management.
 
 This architecture promotes security, scalability, and ease of maintenance, following the same principles used in production-grade deployments.
-
+'''
 📌 Architecture Flow
 🧩 Step-by-Step Flow
 
@@ -40,7 +40,7 @@ MySQL Workbench (Local Tool) → Developers manage and monitor the RDS database 
 Data Flow:
 
 MySQL Workbench ↔ RDS MySQL ↔ EC2 Java Application ↔ User
-
+'''
 🏗️ Architecture Diagram
 
 ⚙️ AWS Services Used
@@ -51,6 +51,7 @@ MySQL Workbench	GUI tool for database design and management.
 Security Groups	Controls inbound and outbound access between EC2, RDS, and developer systems.
 IAM Roles & Policies	Secure access control for AWS services.
 VPC (Virtual Private Cloud)	Provides network isolation and secure communication.
+'''
 🧩 Setup & Deployment Steps
 
 Follow these steps to replicate the project:
@@ -174,7 +175,7 @@ Once the Java app is running:
 Open browser → http://<EC2-Public-IP>:8080
 
 Perform CRUD operations and verify results through MySQL Workbench.
-
+'''
 💡 Key Benefits of This Setup
 ✅ Scalability
 
@@ -195,7 +196,7 @@ Developers can manage databases directly from MySQL Workbench without AWS Consol
 ✅ Real-World Cloud Simulation
 
 Mirrors how enterprises deploy apps and databases separately for better performance and manageability.
-
+'''
 🧠 Learning Outcomes
 
 You will learn:
@@ -209,7 +210,7 @@ RDS MySQL configuration and integration
 Security group and VPC network configuration
 
 Using MySQL Workbench for remote management
-
+'''
 🧩 Future Enhancements
 
 Add Elastic Load Balancer and Auto Scaling for EC2
@@ -221,10 +222,11 @@ Integrate AWS CloudWatch for performance monitoring
 Containerize the Java app using Docker and deploy with ECS or EKS
 
 Automate deployment with CI/CD pipelines (CodePipeline / GitHub Actions)
-
+'''
 🏁 Conclusion
 
 This project provides a complete end-to-end deployment scenario of a Java application integrated with an AWS RDS MySQL database.
 It demonstrates real-world cloud concepts like scalability, security, managed services, and network isolation, essential for modern cloud and DevOps engineers.
 
+'''
 ✨ Developed by Shivangi Mishra
