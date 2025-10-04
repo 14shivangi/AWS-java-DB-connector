@@ -1,4 +1,4 @@
-# 🚀 **Java Application Deployment on AWS EC2 with RDS MySQL Integration**
+# 🚀 **Java Application Deployment on AWS EC2 with RDS MySQL Integration
 
 ---
 
