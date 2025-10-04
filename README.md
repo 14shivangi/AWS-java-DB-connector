@@ -80,6 +80,7 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 5. Launch the instance.
 
 **Connect to EC2:**
+
 ```
 ssh -i "your-key.pem" ec2-user@<EC2-Public-IP>
 
@@ -93,6 +94,7 @@ ssh -i "your-key.pem" ec2-user@<EC2-Public-IP>
 -Verify Java installation:-
 -java -version
 
+
 ### **Step 3: Clone or Upload Java Application**
 ----------------------------------------
 - If using GitHub:-
@@ -101,6 +103,7 @@ ssh -i "your-key.pem" ec2-user@<EC2-Public-IP>
 
 -If it’s a Spring Boot app, run:-
 -java -jar yourapp.jar
+
 
 ### **Step 4: Create an RDS MySQL Database**
 ---------------------------------------
@@ -112,6 +115,7 @@ ssh -i "your-key.pem" ec2-user@<EC2-Public-IP>
  - Enable Public Access (for testing).
  - Assign Security Group to allow inbound access on port 3306.
 5. Wait until the instance is Available
+
 
 ### **Step 5: Connect EC2 to RDS**
 ----------------------------------
@@ -184,13 +188,7 @@ You will learn:
 - Enable **RDS Multi-AZ** for high availability  
 - Integrate **AWS CloudWatch** for performance monitoring  
 - Containerize the Java app using **Docker** and deploy with **ECS or EKS**  
-- Automate deployment with **CI/CD pipelines (CodePipeline / GitHub Actions)**  
-
-## 🏁 **Conclusion**
----------------------------------
-
-This project provides a **complete end-to-end deployment scenario** of a Java application integrated with an AWS RDS MySQL database.  
-It demonstrates real-world cloud concepts like **scalability**, **security**, **managed services**, and **network isolation**, essential for modern **cloud and DevOps engineers**.  
+- Automate deployment with **CI/CD pipelines (CodePipeline / GitHub Actions)**
 
 ---
 
