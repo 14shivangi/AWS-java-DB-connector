@@ -29,16 +29,10 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 
 ## 📌 **Architecture Flow**
 
-### 🧩 **Step-by-Step Flow**
-
 1. **User/Application Request** → The user interacts with the Java web app hosted on EC2.  
 2. **EC2 Instance (App Layer)** → Executes application logic and connects to RDS using its endpoint.  
 3. **RDS MySQL (DB Layer)** → Executes SQL queries (Insert, Update, Delete, Select) and returns results.  
 4. **MySQL Workbench (Local Tool)** → Developers manage and monitor the RDS database remotely.  
-5. **Data Flow:**
-
-
-
 ---
 
 ## 🏗️ **Architecture Diagram**
@@ -154,30 +148,30 @@ Perform CRUD operations and verify results through MySQL Workbench.
 ---
 
 
-## 💡 **Key Benefits of This Setup**
+##  **Key Benefits of This Setup**
 ---------------------------------
 
 
-### ✅ **Scalability**
-Both EC2 and RDS can be scaled independently as per traffic or data growth.  
+###  **Scalability**
+# Both EC2 and RDS can be scaled independently as per traffic or data growth.  
 
-### ✅ **High Availability**
-RDS provides automatic backups, Multi-AZ replication, and snapshots for business continuity.  
+###  **High Availability**
+# RDS provides automatic backups, Multi-AZ replication, and snapshots for business continuity.  
 
-### ✅ **Security**
-Access is tightly controlled via **Security Groups**, **IAM roles**, and **encryption (at rest and in transit)**.  
+###  **Security**
+# Access is tightly controlled via **Security Groups**, **IAM roles**, and **encryption (at rest and in transit)**.  
 
-### ✅ **Ease of Management**
-Developers can manage databases directly from **MySQL Workbench** without AWS Console access.  
+###  **Ease of Management**
+# Developers can manage databases directly from **MySQL Workbench** without AWS Console access.  
 
-### ✅ **Real-World Cloud Simulation**
-Mirrors how enterprises deploy applications and databases separately for better performance, scalability, and manageability.  
+###  **Real-World Cloud Simulation**
+# Mirrors how enterprises deploy applications and databases separately for better performance, scalability, and manageability.  
 
-## 🧠 **Learning Outcomes**
+##  **Learning Outcomes**
 ---------------------------------
 
 
-You will learn:
+#You will learn:
 
 - EC2 setup and SSH connectivity  
 - Java app deployment on cloud  
@@ -187,7 +181,7 @@ You will learn:
 
 ---
 
-## 🧩 **Future Enhancements**
+##  **Future Enhancements**
 ---------------------------------
 
 
