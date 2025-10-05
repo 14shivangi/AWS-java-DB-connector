@@ -64,11 +64,11 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 
 1. Go to the **AWS Management Console → EC2 → Launch Instance**.  
 2. Choose an AMI:  
-   - Example: **Amazon Linux 2** or **Ubuntu 22.04 LTS**.  
+   - Example: **Amazon Linux 2**.  
 3. Select instance type: **t2.micro (Free Tier eligible)**.  
 4. Configure:
    - Key pair for SSH access.  
-   - Security Group → allow ports **22 (SSH)** and **8080 (for web app)**.  
+   - Security Group → allow ports **22 (SSH)** , **8080 (for web app)** and **3306 (For MySQL/Aurora)**.  
 5. Launch the instance.
 
 ---
@@ -78,8 +78,10 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 
 For **Linux Instance**:-
 - sudo yum update -y
-- sudo yum install java-17-openjdk -y
-- sudo yum install git -y
+- sudo yum install java-17-amazon-corretto-devel -y
+- sudo dnf install mariadb105 -y
+- sudo systemctl start mariadb
+
 
 
 
@@ -87,12 +89,10 @@ For **Linux Instance**:-
 ---------------------------------
 
 - If using GitHub:-
+- sudo yum install git -y
+- wget https://github.com/awslabs/amazon-rds-jdbc/releases/download/1.1.15/aws-mysql-jdbc-1.1.15.jar
 - git clone https://github.com/<your-repo-name>.git
 - cd <your-project-folder>
-
--If it’s a Spring Boot app, run:-
--java -jar yourapp.jar
-
 
 ## **Step 4: Create an RDS MySQL Database**
 ---------------------------------
@@ -106,19 +106,24 @@ For **Linux Instance**:-
  - Assign Security Group to allow inbound access on port 3306.
 5. Wait until the instance is Available
 
-
 ## **Step 5: Connect EC2 to RDS**
+---------------------------------
+1. javac -cp .:aws-mysql-jdbc-1.1.15.jar DatabaseApp.java
+2. java -cp .:aws-mysql-jdbc-1.1.15.jar DatabaseApp
+
+
+## **Step 6: Connect EC2 to RDS**
 ---------------------------------
 
 1. Edit EC2’s Security Group to allow outbound traffic to port 3306 (MySQL).
 2. Edit RDS’s Security Group to allow inbound traffic from EC2’s private IP or EC2 security group.
 
-## **Step 6: Test Connection**
+## **Step 7: Test Connection**
 ---------------------------------
 1. Use the EC2 terminal to verify connectivity:-
 2. telnet <RDS-ENDPOINT> 3306
 
-## **Step 7: Configure MySQL Workbench (Local System)**
+## **Step 8: Configure MySQL Workbench (Local System)**
 ---------------------------------
 
 1. Open MySQL Workbench → Click + to create a new connection.
@@ -132,7 +137,7 @@ For **Linux Instance**:-
 #Run SQL queries
 #Monitor performance
 
-## **Step 8: Access the Application**
+## **Step 9: Access the Application**
 ---------------------------------
 Once the Java app is running:
 Open browser → http://<EC2-Public-IP>:8080
@@ -184,6 +189,12 @@ Perform CRUD operations and verify results through MySQL Workbench.
 - Containerize the Java app using **Docker** and deploy with **ECS or EKS**  
 - Automate deployment with **CI/CD pipelines (CodePipeline / GitHub Actions)**
 
+---
+📂 Repository Structure
+aws-java-db-demo/
+ ├── DatabaseApp.java
+ ├── aws-mysql-jdbc-1.1.15.jar
+ ├── README.md
 ---
 
 ✨ _Developed by [Shivangi Mishra](https://github.com/)_  
