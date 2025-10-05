@@ -5,3 +5,8 @@ Write a Java program to connect to your DB (CRUD: insert, display, delete)
 Create a relational database (with MySQL Workbench / RDS / MariaDB on EC2)
 
 Connect Java app -> Database
+
+---
+EC2 Instance → Runs Java app + JDBC driver
+MariaDB/MySQL Database → Stores user records
+MySQL Workbench → GUI for managing DB
