@@ -14,7 +14,7 @@
    - Security Group → allow ports **22 (SSH)** , **8080 (for web app)** and **3306 (For MySQL/Aurora)**.  
 5. Launch the instance.
 
----
+
 ##  **Step 2: Install Required Packages on EC2**
 For **Linux Instance**:-
 - sudo yum update -y
@@ -69,8 +69,8 @@ For **Linux Instance**:-
    - #Monitor performance
 
 ## **Step 9: Access the Application**
-Once the Java app is running:
-Open browser → http://<EC2-Public-IP>:8080
-Perform CRUD operations and verify results through MySQL Workbench.
+Once the Java app is running:-
+- Open browser → http://<EC2-Public-IP>:8080
+- Perform CRUD operations and verify results through MySQL Workbench.
 
 ---
