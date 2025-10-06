@@ -1,6 +1,4 @@
-# 🚀Java Application Deployment on AWS EC2 with RDS MySQL Integration
-
-
+# 📡Cloud-Native Secure Database Integration on AWS with Java JDBC
 
 ## 📌 **Project Objective**
 
