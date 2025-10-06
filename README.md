@@ -7,7 +7,7 @@ This setup demonstrates a **scalable, secure, and cloud-based architecture** whe
 
 - Additionally, **MySQL Workbench** is used locally by developers for remote **database management and monitoring**, replicating a real-world enterprise environment.
 
----
+
 
 ## 📌 **Project Description**
 
@@ -31,13 +31,13 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 2. **EC2 Instance (App Layer)** → Executes application logic and connects to RDS using its endpoint.  
 3. **RDS MySQL (DB Layer)** → Executes SQL queries (Insert, Update, Delete, Select) and returns results.  
 4. **MySQL Workbench (Local Tool)** → Developers manage and monitor the RDS database remotely.  
----
+
 
 ## 🏗️ **Architecture Diagram**
 
 ![AWS Architecture](https://github.com/user-attachments/assets/084f5ae2-84d4-437d-9f99-fa4b2eb36fec)
 
----
+
 
 ## ⚙️ **AWS Services Used**
 
@@ -49,7 +49,7 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 | **Security Groups** | Controls inbound and outbound access between EC2, RDS, and developer systems. |
 | **IAM Roles & Policies** | Secure access control for AWS services. |
 | **VPC (Virtual Private Cloud)** | Provides network isolation and secure communication. |
----
+
 
 
 ##  **Key Benefits of This Setup**
@@ -80,8 +80,6 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 - Security group and VPC network configuration  
 - Using MySQL Workbench for remote management  
 
----
-
 ##  **Future Enhancements**
 
 - Add **Elastic Load Balancer** and **Auto Scaling** for EC2  
@@ -90,17 +88,8 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 - Containerize the Java app using **Docker** and deploy with **ECS or EKS**  
 - Automate deployment with **CI/CD pipelines (CodePipeline / GitHub Actions)**
 
----
-📂 Repository Structure
-
-- aws-java-db-demo/
-
-- ├── DatabaseApp.java
-- ├── aws-mysql-jdbc-1.1.15.jar
-- ├── README.md
----
 
 ✨ _Developed by [Shivangi Mishra](https://github.com/)_  
 🎓 _B.Tech in Computer Science Engineering (AI & ML)_  
 ☁️ _Passionate about Cloud, AWS, and Application Deployment_  
-
+---
