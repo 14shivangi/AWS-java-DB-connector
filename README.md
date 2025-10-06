@@ -17,7 +17,7 @@ This setup demonstrates a **scalable, secure, and cloud-based architecture** whe
 - The application connects to an **Amazon RDS MySQL database** that serves as the **Database Layer**.  
 - Developers use **MySQL Workbench** on their local machines to manage and query the RDS database securely.  
 
-**AWS Security Groups** are configured to enable secure communication:
+**AWS Security Groups** are configured to enable secure communication:-
 - Between **EC2 ↔ RDS** for application connectivity.
 - Between **MySQL Workbench ↔ RDS** for remote management.
 
