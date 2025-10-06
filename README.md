@@ -1,19 +1,19 @@
 # 🚀Java Application Deployment on AWS EC2 with RDS MySQL Integration
 
----
+
 
 ## 📌 **Project Objective**
 
 The main objective of this project is to **deploy a Java-based web application on an AWS EC2 instance** and **integrate it with an AWS RDS MySQL database**.  
 This setup demonstrates a **scalable, secure, and cloud-based architecture** where the application performs **CRUD (Create, Read, Update, Delete)** operations on the RDS database.  
 
-Additionally, **MySQL Workbench** is used locally by developers for remote **database management and monitoring**, replicating a real-world enterprise environment.
+- Additionally, **MySQL Workbench** is used locally by developers for remote **database management and monitoring**, replicating a real-world enterprise environment.
 
 ---
 
 ## 📌 **Project Description**
 
-This project simulates a **real-world enterprise cloud setup** where:
+- This project simulates a **real-world enterprise cloud setup** where:
 
 - A **Java application** runs on an **Amazon EC2 instance** (Linux/Windows) and acts as the **Application Layer**.  
 - The application connects to an **Amazon RDS MySQL database** that serves as the **Database Layer**.  
