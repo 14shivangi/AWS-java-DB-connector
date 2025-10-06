@@ -65,7 +65,7 @@ For **Linux Instance**:-
    - #Run SQL queries
    - #Monitor performance
 
-##☁️ **Step 9: Access the Application**
+## ☁️**Step 9: Access the Application**
 Once the Java app is running:-
 - Open browser → http://<EC2-Public-IP>:8080
 - Perform CRUD operations and verify results through MySQL Workbench.
