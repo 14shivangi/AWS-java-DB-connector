@@ -1,4 +1,4 @@
-# 📡_Cloud-Native Secure Database Integration on AWS with Java JDBC_
+# _📡Cloud-Native Secure Database Integration on AWS with Java JDBC_
 
 ## 📌 **Project Objective**
 
