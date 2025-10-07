@@ -55,22 +55,22 @@ This architecture promotes **security, scalability, and ease of maintenance**, f
 ##  **Key Benefits of This Setup**
 ---------------------------------
 
-###  **Scalability**
+###  *Scalability*
 - Both EC2 and RDS can be scaled independently as per traffic or data growth.  
 
-###  **High Availability**
+###  *High Availability*
 - RDS provides automatic backups, Multi-AZ replication, and snapshots for business continuity.  
 
-###  **Security**
+###  *Security*
 - Access is tightly controlled via **Security Groups**, **IAM roles**, and **encryption (at rest and in transit)**.  
 
-###  **Ease of Management**
+###  *Ease of Management*
 - Developers can manage databases directly from **MySQL Workbench** without AWS Console access.  
 
-###  **Real-World Cloud Simulation**
+###  *Real-World Cloud Simulation*
 - Mirrors how enterprises deploy applications and databases separately for better performance, scalability, and manageability.  
 
-##  **Learning Outcomes**
+##  *Learning Outcomes*
 
 #You will learn:
 
