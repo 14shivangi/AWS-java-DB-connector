@@ -1,6 +1,6 @@
 # _📡Cloud-Native Secure Database Integration on AWS with Java JDBC_
 
-## 📌 **Project Objective**
+## 📌 **Project Objective:**
 
 The main objective of this project is to **deploy a Java-based web application on an AWS EC2 instance** and **integrate it with an AWS RDS MySQL database**.  
 This setup demonstrates a **scalable, secure, and cloud-based architecture** where the application performs **CRUD (Create, Read, Update, Delete)** operations on the RDS database.  
