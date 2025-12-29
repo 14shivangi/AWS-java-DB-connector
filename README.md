@@ -9,7 +9,7 @@ This setup demonstrates a **scalable, secure, and cloud-based architecture** whe
 
 
 
-## 📌 **Project Description**
+## 📌 **Project Description:**
 
 - This project simulates a **real-world enterprise cloud setup** where:
 
